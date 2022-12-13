@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Style file -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AJAX -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>5 day weather forcast</title>
+  </head>
+  <body>
+    <!-- Search Box -->
+    <div class="search-box-container">
+      <form id="search-form">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Enter city name..."
+          class="search-box"
+          autofocus="on"
+          autocomplete="off"
+        />
+        <input type="submit" value="Search" />
+        <!-- <button type="button" class="btn search-btn"> -->
+        <!-- Search -->
+        <!-- </button> -->
+        <button class="btn btn-success w-50" id="location-btn">
+          Current Location
+        </button>
+      </form>
+    </div>
+    <!-- Sun Hero Image -->
+    <div class="fluid-container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          <img
+            src="images/sunny.png"
+            alt="Bright sunny sun image"
+            class="hero-image"
+          />
+        </div>
+        <!-- Current day weather information -->
+        <div class="col-lg-6 col-sm-6">
+          <div class="col-sm-6 current-weather-info">
+            <h1 class="main-heading" id="city-name"></h1>
+            <h2 class="sub-heading" id="weather-temp"></h2>
+            <h2 id="weather-description"></h2>
+            <!-- <h2 class="sub-heading">Sunny, feels like 5°C</h2> -->
+            <!-- <p class="day-para">Friday, November 05</p> -->
+            <p id="date-time" class="date-styles"></p>
+            <!-- <p class="para-heading">Hi <strong>12°C</strong> | Lo 3°C</p> -->
+            <div class="float-left">
+              <span class="temperature" id="temperature">5</span
+              ><span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The 5 day Weather forcast cards -->
+
+    <div class="container">
+      <div class="container-fluid mt-4">
+        <div class="row">
+          <div class="col-auto mb-3">
+            <div class="card card-border">
+              <div class="card-body">
+                <h2 class="card-title">SAT 06</h2>
+                <img src="images/rain.png" alt="Heavy rain cloud" />
+                <p>Heavy rain</p>
+                <p class="card-text"><strong>12˚</strong>|5˚</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto mb-3">
+            <div class="card card-border">
+              <div class="card-body">
+                <h2 class="card-title">SUN 07</h2>
+                <img src="images/storm.png" alt="Storm and lightning" />
+                <p>Storm</p>
+                <p class="card-text"><strong>10˚</strong>|3˚</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto mb-3">
+            <div class="card card-border">
+              <div class="card-body">
+                <h2 class="card-title">MON 08</h2>
+                <img src="images/cloudy.png" alt="Cloudy" />
+                <p>Cloudy</p>
+                <p class="card-text"><strong>13˚</strong>|10˚</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto mb-3">
+            <div class="card card-border">
+              <div class="card-body">
+                <h2 class="card-title">TUES 09</h2>
+                <img src="images/cloudy-sun.png" alt="Sun with clouds" />
+                <p>Partly sunny</p>
+                <p class="card-text"><strong>14˚</strong>|8˚</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto mb-3">
+            <div class="card card-border">
+              <div class="card-body">
+                <h2 class="card-title">WEDS 10</h2>
+                <img src="images/rain.png" alt="Heavy rain cloud" />
+                <p>Heavy rain</p>
+                <p class="card-text"><strong>12˚</strong>|7˚</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Credit Attribute for Flaticon -->
+    <footer>
+      <a
+        href="https://www.flaticon.com/search?word=clouds"
+        target="_blank"
+        class="credit"
+        >Icons made by Freepik from www.flaticon.com</a
+      >
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
