@@ -58,7 +58,7 @@ strong {
   margin: 5px;
 }
 
-div.card-border {
+/* div.card-border {
   border: none;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 35px;
@@ -76,7 +76,7 @@ div.card-border {
 
 img {
   width: 100px;
-}
+} */
 
 button.search-btn {
   background: #1434a4;
