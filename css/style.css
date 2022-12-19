@@ -23,6 +23,8 @@ h1 {
 
 li {
   list-style: none;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .weather-wrapper {
