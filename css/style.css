@@ -50,3 +50,9 @@ li {
   height: 150px;
   width: 150px;
 }
+
+.weather-image strong {
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 500;
+}
