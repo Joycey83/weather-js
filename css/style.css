@@ -44,3 +44,7 @@ li {
 .left-weather-container {
   margin-bottom: 25px;
 }
+
+.weather-image img {
+  margin-right: 25px;
+}
