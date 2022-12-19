@@ -56,3 +56,9 @@ li {
   line-height: 1;
   font-weight: 500;
 }
+
+.weather-image .units {
+  position: relative;
+  font-size: 18px;
+  top: -35px;
+}
