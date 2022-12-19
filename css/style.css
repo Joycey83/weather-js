@@ -12,3 +12,11 @@ body {
   background-position: center center;
   overflow-x: hidden;
 }
+
+.weather-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 2px solid #7393b3;
+  border-radius: 10px;
+}
