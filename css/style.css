@@ -12,3 +12,7 @@ body {
   background-position: center center;
   overflow-x: hidden;
 }
+
+.weather-wrapper {
+  margin: 45px auto;
+}
