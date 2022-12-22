@@ -1,5 +1,5 @@
 const displayWeatherInfo = function (response) {
-  console.log(response.data);
+  console.log(response.data.main.temp);
 };
 
 let apiKey = "5dd071644aff4379355022a20839a99e";
