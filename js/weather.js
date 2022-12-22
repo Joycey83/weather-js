@@ -1,4 +1,4 @@
-let apiKey = "597c40c39084687093b091cd48b366f8";
+let apiKey = "5dd071644aff4379355022a20839a99e";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}`;
 
 console.log(apiUrl);
