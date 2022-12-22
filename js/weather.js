@@ -1,5 +1,7 @@
 const displayWeatherInfo = function (response) {
   console.log(response.data.main.temp);
+  let tempNum = document.querySelector("#temperature");
+  tempNum.innerHTML = response.data.main.temp;
 };
 
 let apiKey = "5dd071644aff4379355022a20839a99e";
