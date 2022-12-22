@@ -31,11 +31,14 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-transform: capitalize;
   font-size: 20px;
   font-style: italic;
   font-weight: 500;
   line-height: 1.8;
+}
+
+li:first-letter {
+  text-transform: capitalize;
 }
 
 .weather-wrapper {
