@@ -1,9 +1,11 @@
 const displayWeatherInfo = function (response) {
   console.log(response.data);
   let cityName = document.querySelector("#city-name");
-  cityName.innerHTML = response.data.name;
   let tempNum = document.querySelector("#temperature");
+  let weatherDescription = document.querySelector("#weather-description");
+  cityName.innerHTML = response.data.name;
   tempNum.innerHTML = Math.round(response.data.main.temp);
+  weatherDescription.innerHTML = response.data.weather[0].description;
 };
 
 let apiKey = "5dd071644aff4379355022a20839a99e";
