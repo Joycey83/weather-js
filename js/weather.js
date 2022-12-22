@@ -1,5 +1,7 @@
 const displayWeatherInfo = function (response) {
   console.log(response.data);
+  let cityName = document.querySelector("#city-name");
+  cityName.innerHTML = response.data.name;
   let tempNum = document.querySelector("#temperature");
   tempNum.innerHTML = Math.round(response.data.main.temp);
 };
