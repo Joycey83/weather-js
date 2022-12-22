@@ -4,10 +4,12 @@ const displayWeatherInfo = function (response) {
   let tempNum = document.querySelector("#temperature");
   let weatherDescription = document.querySelector("#weather-description");
   let humidityNum = document.querySelector("#humidity");
+  let windSpeedNum = document.querySelector("#wind-speed");
   cityName.innerHTML = response.data.name;
   tempNum.innerHTML = Math.round(response.data.main.temp);
   weatherDescription.innerHTML = response.data.weather[0].description;
   humidityNum.innerHTML = response.data.main.humidity;
+  windSpeedNum.innerHTML = response.data.wind.speed;
 };
 
 let apiKey = "5dd071644aff4379355022a20839a99e";
