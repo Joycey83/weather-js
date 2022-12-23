@@ -66,7 +66,8 @@ form.addEventListener("submit", searchCity);
 const displayFahrenheitTemp = function (event) {
   event.preventDefault();
   let fahrenheitTemp = (11 * 9) / 5 + 32;
-  alert(fahrenheitTemp);
+  let tempNum = document.querySelector("#temperature");
+  tempNum.innerHTML = Math.round(fahrenheitTemp);
 };
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
