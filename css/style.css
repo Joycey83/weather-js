@@ -99,15 +99,4 @@ li:first-letter {
   position: relative;
   top: -30px;
   left: 240px;
-  padding-right: 10px;
-  background: #1434a4;
-  background-image: -webkit-linear-gradient(bottom, #1434a4, #89cff0);
-  background-image: -moz-linear-gradient(top, #1434a4, #89cff0);
-  border: 1px solid #0047ab;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 30px;
-  padding: 5px 15px;
-  margin: 0 5px;
 }
