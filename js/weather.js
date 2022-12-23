@@ -45,7 +45,6 @@ const displayWeatherInfo = function (response) {
 
 const search = function (city) {
   let apiKey = "5dd071644aff4379355022a20839a99e";
-  let city = "London";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(displayWeatherInfo);
