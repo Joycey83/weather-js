@@ -31,6 +31,7 @@ const displayWeatherInfo = function (response) {
   let humidityNum = document.querySelector("#humidity");
   let windSpeedNum = document.querySelector("#wind-speed");
   let displayDateTime = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
   cityName.innerHTML = response.data.name;
   tempNum.innerHTML = Math.round(response.data.main.temp);
   weatherDescription.innerHTML = response.data.weather[0].description;
@@ -40,6 +41,7 @@ const displayWeatherInfo = function (response) {
 };
 
 let apiKey = "5dd071644aff4379355022a20839a99e";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
+let city = "Paris";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayWeatherInfo);
