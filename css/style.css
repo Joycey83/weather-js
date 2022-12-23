@@ -90,3 +90,7 @@ li:first-letter {
 .search-box:focus {
   outline: none;
 }
+
+.search-box::placeholder {
+  color: #6082b6;
+}
