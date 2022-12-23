@@ -60,3 +60,13 @@ search("London");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCity);
+
+// Convert convert celsius to fahrenheit function
+
+const displayFahrenheitTemp = function (event) {
+  event.preventDefault();
+  alert("Linked clicked!!");
+};
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
