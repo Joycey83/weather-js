@@ -66,3 +66,13 @@ li:first-letter {
   font-size: 22px;
   top: -10px;
 }
+
+/* Search engine styles */
+
+.search-box-container {
+  width: 340px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin: 1% 3%;
+}
