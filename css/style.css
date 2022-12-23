@@ -101,4 +101,5 @@ li:first-letter {
   left: 240px;
   border-radius: 5px;
   background: #7393b3;
+  border: none;
 }
