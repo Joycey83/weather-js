@@ -122,3 +122,8 @@ li:first-letter {
 .fahrenheit-sign {
   color: #000;
 }
+
+footer {
+  color: #000;
+  padding: 3%;
+}
