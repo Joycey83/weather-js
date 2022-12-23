@@ -117,3 +117,7 @@ li:first-letter {
 .weather-image .active:hover {
   text-decoration: none;
 }
+
+.celsius-sign .fahrenheit-sign {
+  color: #000;
+}
