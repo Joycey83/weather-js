@@ -19,6 +19,7 @@ const formatDate = function (timestamp) {
     "Saturday",
   ];
   let day = days[date.getDay()];
+  let currentDate = timestamp.getDate();
 
   return `${day} ${hour}:${minutes}`;
 };
