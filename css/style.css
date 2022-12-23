@@ -118,6 +118,7 @@ li:first-letter {
   text-decoration: none;
 }
 
-.celsius-sign .fahrenheit-sign {
+.celsius-sign,
+.fahrenheit-sign {
   color: #000;
 }
