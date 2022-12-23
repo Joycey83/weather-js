@@ -65,7 +65,8 @@ form.addEventListener("submit", searchCity);
 
 const displayFahrenheitTemp = function (event) {
   event.preventDefault();
-  alert("Linked clicked!!");
+  let fahrenheitTemp = (11 * 9) / 5 + 32;
+  alert(fahrenheitTemp);
 };
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
