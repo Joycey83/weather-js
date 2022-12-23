@@ -122,7 +122,7 @@ li:first-letter {
 .fahrenheit-sign {
   color: #000;
 }
-
+/* Footer for accessing my project through social media links */
 footer {
   position: fixed;
   left: 0;
@@ -132,4 +132,9 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
+}
+
+.social-media-link {
+  text-decoration: none;
+  color: #6495ed;
 }
