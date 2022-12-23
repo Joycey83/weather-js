@@ -99,4 +99,6 @@ li:first-letter {
   position: relative;
   top: -30px;
   left: 240px;
+  border-radius: 5px;
+  background: #7393b3;
 }
