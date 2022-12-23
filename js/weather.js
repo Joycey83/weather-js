@@ -40,6 +40,7 @@ const displayWeatherInfo = function (response) {
   displayDateTime.innerHTML = formatDate(response.data.dt * 1000);
   let icon = response.data.weather[0].icon;
   iconElement.setAttribute("src", `icons/${icon}.svg`);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 };
 
 let apiKey = "5dd071644aff4379355022a20839a99e";
