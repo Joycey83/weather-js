@@ -68,8 +68,10 @@ form.addEventListener("submit", searchCity);
 
 const displayFahrenheitTemp = function (event) {
   event.preventDefault();
-  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
+  // remove the active class for the celsius-link
+  celsiusLink.classList.remove("active");
   let tempNum = document.querySelector("#temperature");
+  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
   tempNum.innerHTML = Math.round(fahrenheitTemp);
 };
 
