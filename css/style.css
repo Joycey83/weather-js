@@ -135,6 +135,9 @@ footer {
 }
 
 .social-media-link {
-  text-decoration: none;
   color: #6495ed;
+}
+
+.social-media-link:hover {
+  text-decoration: none;
 }
