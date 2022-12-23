@@ -38,6 +38,8 @@ const displayWeatherInfo = function (response) {
   humidityNum.innerHTML = response.data.main.humidity;
   windSpeedNum.innerHTML = Math.round(response.data.wind.speed);
   displayDateTime.innerHTML = formatDate(response.data.dt * 1000);
+  let icon = response.data.weather[0].icon;
+  iconElement.setAttribute("src", `icons/${icon}.svg`);
 };
 
 let apiKey = "5dd071644aff4379355022a20839a99e";
