@@ -94,3 +94,8 @@ li:first-letter {
 .search-box::placeholder {
   color: #6082b6;
 }
+
+.search-btn {
+  position: relative;
+  top: -20px;
+}
