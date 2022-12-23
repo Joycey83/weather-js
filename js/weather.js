@@ -21,7 +21,7 @@ const formatDate = function (timestamp) {
   let day = days[date.getDay()];
   let currentDate = timestamp.getDate();
 
-  return `${day} ${hour}:${minutes}`;
+  return ` ${currentDate}, ${day} ${hour}:${minutes}`;
 };
 
 const displayWeatherInfo = function (response) {
