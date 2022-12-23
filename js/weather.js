@@ -19,9 +19,8 @@ const formatDate = function (timestamp) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  let currentDate = timestamp.getDate();
 
-  return ` ${currentDate}, ${day} ${hour}:${minutes}`;
+  return `${day} ${hour}:${minutes}`;
 };
 
 const displayWeatherInfo = function (response) {
