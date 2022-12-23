@@ -44,7 +44,7 @@ const displayWeatherInfo = function (response) {
   iconElement.setAttribute("src", `icons/${icon}.svg`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
 };
-
+// Search Engine functions
 const search = function (city) {
   let apiKey = "5dd071644aff4379355022a20839a99e";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -60,6 +60,7 @@ const searchCity = function (event) {
 
 let celsiusTemperature = null;
 
+// Search engine eventlistner
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCity);
 
@@ -72,7 +73,16 @@ const displayFahrenheitTemp = function (event) {
   tempNum.innerHTML = Math.round(fahrenheitTemp);
 };
 
+const displayCelsiusTemp = function (event) {
+  event.preventDefault();
+  let tempNum = document.querySelector("#temperature");
+  tempNum.innerHTML = Math.round(celsiusTemperature);
+};
+
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 search("London");
