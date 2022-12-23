@@ -106,3 +106,14 @@ li:first-letter {
   color: aliceblue;
   background: #6082b6;
 }
+
+/* Styles for the temperature font */
+
+.weather-image .active {
+  color: #0047ab;
+  cursor: default;
+}
+
+.weather-image .active:hover {
+  text-decoration: none;
+}
