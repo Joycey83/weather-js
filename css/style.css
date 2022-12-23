@@ -101,3 +101,8 @@ li:first-letter {
   border: none;
   padding: 10px;
 }
+
+.search-btn:hover {
+  color: aliceblue;
+  background: #6082b6;
+}
