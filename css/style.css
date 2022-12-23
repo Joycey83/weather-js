@@ -97,5 +97,6 @@ li:first-letter {
 
 .search-btn {
   position: relative;
-  top: -20px;
+  top: -30px;
+  right: 120px;
 }
