@@ -33,7 +33,9 @@ const displayWeatherInfo = function (response) {
   let displayDateTime = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
   cityName.innerHTML = response.data.name;
-  tempNum.innerHTML = Math.round(response.data.main.temp);
+
+  celsiusTemperature = response.data.main.temp;
+  tempNum.innerHTML = Math.round(celsiusTemperature);
   weatherDescription.innerHTML = response.data.weather[0].description;
   humidityNum.innerHTML = response.data.main.humidity;
   windSpeedNum.innerHTML = Math.round(response.data.wind.speed);
@@ -56,7 +58,7 @@ const searchCity = function (event) {
   search(cityInput.value);
 };
 
-search("London");
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCity);
@@ -65,10 +67,12 @@ form.addEventListener("submit", searchCity);
 
 const displayFahrenheitTemp = function (event) {
   event.preventDefault();
-  let fahrenheitTemp = (11 * 9) / 5 + 32;
+  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
   let tempNum = document.querySelector("#temperature");
   tempNum.innerHTML = Math.round(fahrenheitTemp);
 };
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
+
+search("London");
