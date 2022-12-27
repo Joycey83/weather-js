@@ -139,6 +139,10 @@ div.card-border {
 .card-body {
   text-align: center;
 }
+
+.weather-temperature-min {
+  opacity: 0.5;
+}
 /* Footer for accessing my project through social media links */
 footer {
   position: fixed;
