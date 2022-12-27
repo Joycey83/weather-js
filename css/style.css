@@ -145,7 +145,6 @@ div.card-border {
 }
 /* Footer for accessing my project through social media links */
 footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -153,7 +152,6 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
-  overflow-x: hidden;
 }
 
 .social-media-link {
