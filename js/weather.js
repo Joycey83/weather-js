@@ -26,7 +26,10 @@ const formatDate = function (timestamp) {
 const displayForecast = function () {
   let weatherForecastElement = document.querySelector("#weather-forecast");
 
-  weatherForecastElement.innerHTML = `<div class="container-fluid mt-4">
+  let forecastHTML = "";
+
+  forecastHTML =
+    weatherForecastElement.innerHTML = `<div class="container-fluid mt-4">
   <div class="row">
     <div class="col-auto mb-3">
       <div class="card card-border">
@@ -46,6 +49,8 @@ const displayForecast = function () {
     </div>
   </div>
 </div>`;
+
+  weatherForecastElement.innerHTML = forecastHTML;
 };
 
 const displayWeatherInfo = function (response) {
