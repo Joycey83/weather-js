@@ -23,6 +23,12 @@ const formatDate = function (timestamp) {
   return `${day} ${hour}:${minutes}`;
 };
 
+const displayForecast = function () {
+  let weatherForecastElement = document.querySelector("#weather-forecast");
+
+  weatherForecastElement.innerHTML = "Forecast";
+};
+
 const displayWeatherInfo = function (response) {
   console.log(response.data);
   let cityName = document.querySelector("#city-name");
@@ -94,3 +100,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 search("London");
+displayForecast();
