@@ -145,13 +145,10 @@ div.card-border {
 }
 /* Footer for accessing my project through social media links */
 footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background: #000;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 1% 2%;
 }
 
 .social-media-link {
