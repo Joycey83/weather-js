@@ -27,10 +27,11 @@ const displayForecast = function () {
   let weatherForecastElement = document.querySelector("#weather-forecast");
 
   let forecastHTML = `<div class="row">`;
-
-  forecastHTML =
-    forecastHTML +
-    ` 
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` 
 
 <div class="col-auto mb-3">
   <div class="card card-border">
@@ -50,29 +51,8 @@ const displayForecast = function () {
 </div>
 
 `;
+  });
 
-  forecastHTML =
-    forecastHTML +
-    ` 
-  
-  <div class="col-auto mb-3">
-    <div class="card card-border">
-      <div class="card-body">
-        <h3 class="weather-forecast-day">Thu</h3>
-        <img
-          src="https://lighthearted-mousse-3ce7cd.netlify.app/icons/04d.svg"
-          alt=""
-          width="42"
-        />
-        <div class="weather-forecast-temperature">
-          <span class="weather-temperature-max">10˚|</span
-          ><span class="weather-temperature-min">3˚</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  `;
   forecastHTML = forecastHTML + `</div>`;
   weatherForecastElement.innerHTML = forecastHTML;
 };
