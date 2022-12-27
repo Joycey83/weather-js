@@ -122,6 +122,23 @@ li:first-letter {
 .fahrenheit-sign {
   color: #000;
 }
+/* Weather forecast styles */
+
+.card {
+  width: 180px;
+  margin: 5px;
+}
+
+div.card-border {
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 35px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+  text-align: center;
+}
 /* Footer for accessing my project through social media links */
 footer {
   position: fixed;
