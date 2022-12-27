@@ -144,7 +144,7 @@ div.card-border {
   opacity: 0.7;
 }
 /* Footer for accessing my project through social media links */
-/* footer {
+footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -153,6 +153,8 @@ div.card-border {
   color: white;
   text-align: center;
   padding: 15px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .social-media-link {
@@ -162,4 +164,4 @@ div.card-border {
 .social-media-link:hover {
   text-decoration: none;
   color: #d22b2b;
-} */
+}
