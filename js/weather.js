@@ -36,7 +36,7 @@ const displayForecast = function () {
 <div class="col-auto mb-3">
   <div class="card card-border">
     <div class="card-body">
-      <h3 class="weather-forecast-day">Thu</h3>
+      <h3 class="weather-forecast-day">${day}</h3>
       <img
         src="https://lighthearted-mousse-3ce7cd.netlify.app/icons/04d.svg"
         alt=""
