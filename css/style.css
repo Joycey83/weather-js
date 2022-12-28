@@ -130,6 +130,10 @@ li:first-letter {
   text-decoration: none;
 }
 
+.units a {
+  text-decoration: none;
+}
+
 .celsius-sign,
 .fahrenheit-sign {
   color: #000;
