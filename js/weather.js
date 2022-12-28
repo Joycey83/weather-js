@@ -84,7 +84,6 @@ const getForecastInfo = function (coordinates) {
 };
 
 const displayWeatherInfo = function (response) {
-  console.log(response.data);
   let cityName = document.querySelector("#city-name");
   let tempNum = document.querySelector("#temperature");
   let weatherDescription = document.querySelector("#weather-description");
@@ -121,6 +120,7 @@ const searchCity = function (event) {
   search(cityInput.value);
 };
 
+// Global event
 let celsiusTemperature = null;
 
 // Search engine eventlistner
