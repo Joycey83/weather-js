@@ -38,10 +38,11 @@ const displayForecast = function (response) {
 
   let forecastHTML = `<div class="row">`;
 
-  dailyForecast.forEach(function (forecastDay) {
-    forecastHTML =
-      forecastHTML +
-      ` 
+  dailyForecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        ` 
 
 <div class="col-auto mb-3">
   <div class="card card-border">
@@ -65,6 +66,7 @@ const displayForecast = function (response) {
 </div>
 
 `;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
