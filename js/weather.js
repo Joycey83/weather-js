@@ -57,6 +57,10 @@ const displayForecast = function () {
   weatherForecastElement.innerHTML = forecastHTML;
 };
 
+const getForecastInfo = function (coordinates) {
+  console.log(coordinates);
+};
+
 const displayWeatherInfo = function (response) {
   console.log(response.data);
   let cityName = document.querySelector("#city-name");
@@ -77,7 +81,10 @@ const displayWeatherInfo = function (response) {
   let icon = response.data.weather[0].icon;
   iconElement.setAttribute("src", `icons/${icon}.svg`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  getForecastInfo(response.data.coord);
 };
+
 // Search Engine functions
 const search = function (city) {
   let apiKey = "5dd071644aff4379355022a20839a99e";
