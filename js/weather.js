@@ -24,11 +24,11 @@ const formatDate = function (timestamp) {
 };
 
 const displayForecast = function (response) {
-  console.log(response.data.daily);
+  let dailyForecast = response.data.daily;
   let weatherForecastElement = document.querySelector("#weather-forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Thu", "Fri", "Sat", "Sun"];
+
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
