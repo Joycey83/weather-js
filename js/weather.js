@@ -39,7 +39,7 @@ const displayForecast = function (response) {
     <div class="card-body">
       <h3 class="weather-forecast-day">${forecastDay.dt}</h3>
       <img
-        src="https://lighthearted-mousse-3ce7cd.netlify.app/icons/04d.svg"
+        src="icons/${forecastDay.weather[0].icon}.svg"
         alt=""
         width="42"
       />
