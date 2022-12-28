@@ -60,7 +60,7 @@ const displayForecast = function (response) {
 
 const getForecastInfo = function (coordinates) {
   console.log(coordinates);
-  let apiKey = "5dd071644aff4379355022a20839a99e";
+  let apiKey = "8944afa6845bd7c413a687258d3211ef";
   let lat = coordinates.lat;
   let long = coordinates.lon;
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
@@ -94,7 +94,7 @@ const displayWeatherInfo = function (response) {
 
 // Search Engine functions
 const search = function (city) {
-  let apiKey = "5dd071644aff4379355022a20839a99e";
+  let apiKey = "8944afa6845bd7c413a687258d3211ef";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(displayWeatherInfo);
