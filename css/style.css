@@ -120,12 +120,13 @@ li:first-letter {
 
 /* Styles for the temperature font */
 
-.weather-image .active {
+.units .active {
   color: #0047ab;
+  text-decoration: none;
   cursor: default;
 }
 
-.weather-image .active:hover {
+.units .active:hover {
   text-decoration: none;
 }
 
