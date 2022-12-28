@@ -122,6 +122,7 @@ li:first-letter {
 
 .weather-image .active {
   color: #0047ab;
+  text-decoration: none;
   cursor: default;
 }
 
