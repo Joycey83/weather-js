@@ -29,7 +29,7 @@ const displayForecast = function (response) {
 
   let forecastHTML = `<div class="row">`;
 
-  days.forEach(function (day) {
+  dailyForecast.forEach(function (day) {
     forecastHTML =
       forecastHTML +
       ` 
