@@ -29,7 +29,7 @@ const displayForecast = function (response) {
 
   let forecastHTML = `<div class="row">`;
 
-  dailyForecast.forEach(function (day) {
+  dailyForecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       ` 
@@ -37,7 +37,7 @@ const displayForecast = function (response) {
 <div class="col-auto mb-3">
   <div class="card card-border">
     <div class="card-body">
-      <h3 class="weather-forecast-day">${day}</h3>
+      <h3 class="weather-forecast-day">${forecastDay.dt}</h3>
       <img
         src="https://lighthearted-mousse-3ce7cd.netlify.app/icons/04d.svg"
         alt=""
