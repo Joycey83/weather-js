@@ -24,6 +24,7 @@ const formatDate = function (timestamp) {
 };
 
 const displayForecast = function (response) {
+  console.log(response.data);
   let weatherForecastElement = document.querySelector("#weather-forecast");
 
   let forecastHTML = `<div class="row">`;
