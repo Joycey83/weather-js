@@ -23,7 +23,8 @@ const formatDate = function (timestamp) {
   return `${day} ${hour}:${minutes}`;
 };
 
-const displayForecast = function () {
+const displayForecast = function (response) {
+  console.log(response.data.daily);
   let weatherForecastElement = document.querySelector("#weather-forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -64,6 +65,8 @@ const getForecastInfo = function (coordinates) {
   let long = coordinates.lon;
   let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
   console.log(apiUrl);
+
+  axios.get(apiUrl).then(displayForecast);
 };
 
 const displayWeatherInfo = function (response) {
@@ -140,4 +143,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 search("London");
-displayForecast();
