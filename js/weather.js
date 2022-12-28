@@ -24,7 +24,6 @@ const formatDate = function (timestamp) {
 };
 
 const displayForecast = function (response) {
-  console.log(response.data);
   let weatherForecastElement = document.querySelector("#weather-forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -64,7 +63,6 @@ const getForecastInfo = function (coordinates) {
   let lat = coordinates.lat;
   let long = coordinates.lon;
   let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);
 
   axios.get(apiUrl).then(displayForecast);
 };
