@@ -44,8 +44,8 @@ const displayForecast = function (response) {
         width="42"
       />
       <div class="weather-forecast-temperature">
-        <span class="weather-temperature-max">10˚|</span
-        ><span class="weather-temperature-min">3˚</span>
+        <span class="weather-temperature-max">${forecastDay.temp.max}˚|</span
+        ><span class="weather-temperature-min">${forecastDay.temp.min}˚</span>
       </div>
     </div>
   </div>
