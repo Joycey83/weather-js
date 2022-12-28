@@ -23,6 +23,15 @@ const formatDate = function (timestamp) {
   return `${day} ${hour}:${minutes}`;
 };
 
+const formatForecastDay = function (dateTimeStamp) {
+  let date = new Date(dateTimeStamp * 1000);
+  let day = date.getDay();
+
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+};
+
 const displayForecast = function (response) {
   let dailyForecast = response.data.daily;
   let weatherForecastElement = document.querySelector("#weather-forecast");
@@ -37,7 +46,7 @@ const displayForecast = function (response) {
 <div class="col-auto mb-3">
   <div class="card card-border">
     <div class="card-body">
-      <h3 class="weather-forecast-day">${forecastDay.dt}</h3>
+      <h3 class="weather-forecast-day">${formatForecastDay(forecastDay.dt)}</h3>
       <img
         src="icons/${forecastDay.weather[0].icon}.svg"
         alt=""
