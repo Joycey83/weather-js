@@ -72,7 +72,7 @@ li:first-letter {
 /* Search engine styles */
 
 .search-box-container {
-  width: 430px;
+  width: 400px;
   padding: 12px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
