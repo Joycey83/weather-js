@@ -109,6 +109,15 @@ li:first-letter {
   background: #6082b6;
 }
 
+.location-btn {
+  margin: 5px auto;
+  padding: 10px;
+  background: paleturquoise;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+}
+
 /* Styles for the temperature font */
 
 .weather-image .active {
