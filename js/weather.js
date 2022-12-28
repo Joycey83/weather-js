@@ -53,8 +53,12 @@ const displayForecast = function (response) {
         width="42"
       />
       <div class="weather-forecast-temperature">
-        <span class="weather-temperature-max">${forecastDay.temp.max}˚|</span
-        ><span class="weather-temperature-min">${forecastDay.temp.min}˚</span>
+        <span class="weather-temperature-max">${Math.round(
+          forecastDay.temp.max
+        )}˚|</span
+        ><span class="weather-temperature-min">${Math.round(
+          forecastDay.temp.min
+        )}˚</span>
       </div>
     </div>
   </div>
