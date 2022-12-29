@@ -95,6 +95,28 @@ const displayWeatherInfo = function (response) {
 
   diffWeatherImage = document.querySelector("#weather-condition-image");
 
+  if (temperature <= 0) {
+    test.classList.add("weather-condition-image1");
+    test.classList.remove(
+      "weather-condition-image2",
+      "weather-condition-image3"
+    );
+  } else {
+    if (temperature >= 16) {
+      test.classList.add("weather-condition-image3");
+      test.classList.remove(
+        "weather-condition-image1",
+        "weather-condition-image2"
+      );
+    } else {
+      test.classList.add("weather-condition-image2");
+      test.classList.remove(
+        "weather-condition-image1",
+        "weather-condition-image3"
+      );
+    }
+  }
+
   celsiusTemperature = response.data.main.temp;
   tempNum.innerHTML = Math.round(celsiusTemperature);
   weatherDescription.innerHTML = response.data.weather[0].description;
