@@ -122,6 +122,13 @@ const searchCity = function (event) {
 
 // Get current location
 
+const searchCurrentLocation = function (position) {
+  let apiKey = "8944afa6845bd7c413a687258d3211ef";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayWeatherInfo);
+};
+
 const currentLocation = function (event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchCurrentLocation);
