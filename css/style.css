@@ -120,10 +120,34 @@ li:first-letter {
 }
 /* Background images when the weather condition changes */
 .weather-condition-image1 {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url(/images/weather-5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow-x: hidden;
 }
 .weather-condition-image2 {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url(/images/weather-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow-x: hidden;
 }
 .weather-condition-image3 {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url(/images/weather-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow-x: hidden;
 }
 /* Styles for the temperature font */
 
