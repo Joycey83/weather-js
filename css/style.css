@@ -194,7 +194,8 @@ div.card-border {
 }
 
 .weather-temperature-min {
-  opacity: 0.7;
+  color: #a7c7e7;
+  opacity: 0.9;
 }
 /* Footer for accessing my project through social media links */
 footer {
