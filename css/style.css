@@ -119,7 +119,7 @@ div.humid-wind-info {
 }
 
 .location-btn:hover {
-  border: 1px solid #0f52ba;
+  border: thick double #32a1ce;
 }
 /* Background images when the weather condition changes */
 .weather-condition-image-1 {
