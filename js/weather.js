@@ -95,14 +95,14 @@ const displayWeatherInfo = function (response) {
 
   diffWeatherImage = document.querySelector("#weather-condition-image");
 
-  if (temperature < 0) {
+  if (tempNum < 0) {
     diffWeatherImage.classList.add("weather-condition-image1");
     diffWeatherImage.classList.remove(
       "weather-condition-image2",
       "weather-condition-image3"
     );
   } else {
-    if (temperature > 16) {
+    if (tempNum > 16) {
       diffWeatherImage.classList.add("weather-condition-image3");
       diffWeatherImage.classList.remove(
         "weather-condition-image1",
