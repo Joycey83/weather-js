@@ -127,6 +127,7 @@ li:first-letter {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  filter: brightness(116%);
   overflow-x: hidden;
 }
 .weather-condition-image-2 {
