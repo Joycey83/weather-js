@@ -93,6 +93,8 @@ const displayWeatherInfo = function (response) {
   let iconElement = document.querySelector("#icon");
   cityName.innerHTML = response.data.name;
 
+  diffWeatherImage = document.querySelector("#weather-condition-image");
+
   celsiusTemperature = response.data.main.temp;
   tempNum.innerHTML = Math.round(celsiusTemperature);
   weatherDescription.innerHTML = response.data.weather[0].description;

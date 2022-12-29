@@ -119,7 +119,12 @@ li:first-letter {
   border-radius: 5px;
 }
 /* Background images when the weather condition changes */
-
+.weather-condition-image1 {
+}
+.weather-condition-image2 {
+}
+.weather-condition-image3 {
+}
 /* Styles for the temperature font */
 
 .units .active {
