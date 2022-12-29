@@ -84,14 +84,9 @@ const getForecastInfo = function (coordinates) {
 };
 
 const displayWeatherInfo = function (response) {
-  let cityName = document.querySelector("#city-name");
+  celsiusTemperature = response.data.main.temp;
+  tempNum.innerHTML = Math.round(celsiusTemperature);
   let tempNum = document.querySelector("#temperature");
-  let weatherDescription = document.querySelector("#weather-description");
-  let humidityNum = document.querySelector("#humidity");
-  let windSpeedNum = document.querySelector("#wind-speed");
-  let displayDateTime = document.querySelector("#date");
-  let iconElement = document.querySelector("#icon");
-  cityName.innerHTML = response.data.name;
 
   diffWeatherImage = document.querySelector("#weather-condition-image");
 
@@ -116,9 +111,14 @@ const displayWeatherInfo = function (response) {
       );
     }
   }
+  let cityName = document.querySelector("#city-name");
+  let weatherDescription = document.querySelector("#weather-description");
+  let humidityNum = document.querySelector("#humidity");
+  let windSpeedNum = document.querySelector("#wind-speed");
+  let displayDateTime = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
+  cityName.innerHTML = response.data.name;
 
-  celsiusTemperature = response.data.main.temp;
-  tempNum.innerHTML = Math.round(celsiusTemperature);
   weatherDescription.innerHTML = response.data.weather[0].description;
   humidityNum.innerHTML = response.data.main.humidity;
   windSpeedNum.innerHTML = Math.round(response.data.wind.speed);
