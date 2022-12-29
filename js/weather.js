@@ -97,23 +97,23 @@ const displayWeatherInfo = function (response) {
 
   if (tempNum < 0) {
     diffWeatherImage.classList.add("weather-condition-image1");
-    diffWeatherImage.classList.remove(
-      "weather-condition-image2",
-      "weather-condition-image3"
-    );
+    // diffWeatherImage.classList.remove(
+    //   "weather-condition-image2",
+    //   "weather-condition-image3"
+    // );
   } else {
     if (tempNum > 16) {
       diffWeatherImage.classList.add("weather-condition-image3");
-      diffWeatherImage.classList.remove(
-        "weather-condition-image1",
-        "weather-condition-image2"
-      );
+      // diffWeatherImage.classList.remove(
+      //   "weather-condition-image1",
+      //   "weather-condition-image2"
+      // );
     } else {
       diffWeatherImage.classList.add("weather-condition-image2");
-      diffWeatherImage.classList.remove(
-        "weather-condition-image1",
-        "weather-condition-image3"
-      );
+      // diffWeatherImage.classList.remove(
+      //   "weather-condition-image1",
+      //   "weather-condition-image3"
+      // );
     }
   }
 
