@@ -111,6 +111,10 @@ const displayWeatherInfo = function (response) {
       );
     }
   }
+  let location = response.data.name;
+  let city = document.querySelector("#city-name");
+  city.innerHTML = location;
+
   let cityName = document.querySelector("#city-name");
   let weatherDescription = document.querySelector("#weather-description");
   let humidityNum = document.querySelector("#humidity");
@@ -144,13 +148,64 @@ const searchCity = function (event) {
   search(cityInput.value);
 };
 
+const displayLocalWeather = function (response) {
+  celsiusTemperature = response.data.main.temp;
+  let tempNum = document.querySelector("#temperature");
+  tempNum.innerHTML = Math.round(celsiusTemperature);
+
+  diffWeatherImage = document.querySelector("#weather-condition-image");
+
+  if (tempNum < 0) {
+    diffWeatherImage.classList.add("weather-condition-image-1");
+    diffWeatherImage.classList.remove(
+      "weather-condition-image-2",
+      "weather-condition-image-3"
+    );
+  } else {
+    if (tempNum > 20) {
+      diffWeatherImage.classList.add("weather-condition-image-3");
+      diffWeatherImage.classList.remove(
+        "weather-condition-image-1",
+        "weather-condition-image-2"
+      );
+    } else {
+      diffWeatherImage.classList.add("weather-condition-image-2");
+      diffWeatherImage.classList.remove(
+        "weather-condition-image-1",
+        "weather-condition-image-3"
+      );
+    }
+  }
+  let location = response.data.name;
+  let city = document.querySelector("#city-name");
+  city.innerHTML = location;
+
+  let cityName = document.querySelector("#city-name");
+  let weatherDescription = document.querySelector("#weather-description");
+  let humidityNum = document.querySelector("#humidity");
+  let windSpeedNum = document.querySelector("#wind-speed");
+  let displayDateTime = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
+  cityName.innerHTML = response.data.name;
+
+  weatherDescription.innerHTML = response.data.weather[0].description;
+  humidityNum.innerHTML = response.data.main.humidity;
+  windSpeedNum.innerHTML = Math.round(response.data.wind.speed);
+  displayDateTime.innerHTML = formatDate(response.data.dt * 1000);
+  let icon = response.data.weather[0].icon;
+  iconElement.setAttribute("src", `icons/${icon}.svg`);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  getForecastInfo(response.data.coord);
+};
+
 // Get current location
 
 const searchCurrentLocation = function (position) {
   let apiKey = "8944afa6845bd7c413a687258d3211ef";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
 
-  axios.get(apiUrl).then(displayWeatherInfo);
+  axios.get(apiUrl).then(displayLocalWeather);
 };
 
 const currentLocation = function (event) {
