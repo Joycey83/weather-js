@@ -179,6 +179,11 @@ div.humid-wind-info {
 .card {
   width: 180px;
   margin: 5px;
+  transition: all 200ms ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.2);
 }
 
 div.card-border {
