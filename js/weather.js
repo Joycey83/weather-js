@@ -122,6 +122,11 @@ const searchCity = function (event) {
 
 // Get current location
 
+const currentLocation = function (event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchCurrentLocation);
+};
+
 const locationBtn = document.querySelector("#location-button");
 locationBtn.addEventListener("click", currentLocation);
 
