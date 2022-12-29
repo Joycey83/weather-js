@@ -91,23 +91,23 @@ const displayWeatherInfo = function (response) {
   diffWeatherImage = document.querySelector("#weather-condition-image");
 
   if (tempNum < 0) {
-    diffWeatherImage.classList.add("weather-condition-image1");
+    diffWeatherImage.classList.add("weather-condition-image-1");
     diffWeatherImage.classList.remove(
-      "weather-condition-image2",
-      "weather-condition-image3"
+      "weather-condition-image-2",
+      "weather-condition-image-3"
     );
   } else {
     if (tempNum > 19) {
-      diffWeatherImage.classList.add("weather-condition-image3");
+      diffWeatherImage.classList.add("weather-condition-image-3");
       diffWeatherImage.classList.remove(
-        "weather-condition-image1",
-        "weather-condition-image2"
+        "weather-condition-image-1",
+        "weather-condition-image-2"
       );
     } else {
-      diffWeatherImage.classList.add("weather-condition-image2");
+      diffWeatherImage.classList.add("weather-condition-image-2");
       diffWeatherImage.classList.remove(
-        "weather-condition-image1",
-        "weather-condition-image3"
+        "weather-condition-image-1",
+        "weather-condition-image-3"
       );
     }
   }
