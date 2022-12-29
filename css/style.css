@@ -192,10 +192,12 @@ div.card-border {
 .card-body {
   text-align: center;
 }
-
+.weather-temperature-max {
+  font-size: 24px;
+}
 .weather-temperature-min {
   color: #000080;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 /* Footer for accessing my project through social media links */
 footer {
