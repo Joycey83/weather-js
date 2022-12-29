@@ -85,8 +85,8 @@ const getForecastInfo = function (coordinates) {
 
 const displayWeatherInfo = function (response) {
   celsiusTemperature = response.data.main.temp;
-  tempNum.innerHTML = Math.round(celsiusTemperature);
   let tempNum = document.querySelector("#temperature");
+  tempNum.innerHTML = Math.round(celsiusTemperature);
 
   diffWeatherImage = document.querySelector("#weather-condition-image");
 
