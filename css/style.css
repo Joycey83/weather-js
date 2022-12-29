@@ -69,7 +69,7 @@ li:first-letter {
   top: -10px;
 }
 /* Humidity info */
-.humid-wind-info {
+div.humid-wind-info {
   margin-bottom: 100px;
 }
 /* Search engine styles */
