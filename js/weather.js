@@ -44,7 +44,7 @@ const displayForecast = function (response) {
         forecastHTML +
         ` 
 
-<div class="col-auto mb-3">
+<div class="col-auto mb-3 card-container">
   <div class="card card-border">
     <div class="card-body">
       <h3 class="weather-forecast-day">${formatForecastDay(forecastDay.dt)}</h3>

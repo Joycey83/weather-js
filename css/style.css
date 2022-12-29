@@ -177,6 +177,10 @@ div.humid-wind-info {
   transition: all 200ms ease-in-out;
 }
 
+.card-container {
+  padding: 20px 0;
+}
+
 .card:hover {
   background: #b6d0e2;
   transform: scale(1.2);
