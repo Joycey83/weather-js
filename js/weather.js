@@ -120,6 +120,11 @@ const searchCity = function (event) {
   search(cityInput.value);
 };
 
+// Get current location
+
+const locationBtn = document.querySelector("#location-button");
+locationBtn.addEventListener("click", currentLocation);
+
 // Global event
 let celsiusTemperature = null;
 
