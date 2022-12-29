@@ -119,8 +119,7 @@ div.humid-wind-info {
 }
 
 .location-btn:hover {
-  background: #0f52ba;
-  color: aliceblue;
+  border: 1px solid #0f52ba;
 }
 /* Background images when the weather condition changes */
 .weather-condition-image-1 {
