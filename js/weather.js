@@ -51,7 +51,7 @@ const displayForecast = function (response) {
       <img
         src="icons/${forecastDay.weather[0].icon}.svg"
         alt=""
-        width="42"
+        width="50"
       />
       <div class="weather-forecast-temperature">
         <span class="weather-temperature-max">${Math.round(
