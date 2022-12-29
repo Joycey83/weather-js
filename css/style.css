@@ -68,7 +68,10 @@ li:first-letter {
   font-size: 22px;
   top: -10px;
 }
-
+/* Humidity info */
+.humid-wind-info {
+  margin-bottom: 10px;
+}
 /* Search engine styles */
 
 .search-box-container {
