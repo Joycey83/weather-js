@@ -70,7 +70,7 @@ li:first-letter {
 }
 /* Humidity info */
 div.humid-wind-info {
-  margin-bottom: 100px;
+  padding: 20px;
 }
 /* Search engine styles */
 
