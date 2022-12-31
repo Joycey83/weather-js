@@ -234,6 +234,6 @@ footer {
 /****** Media Queries for the search box */
 @media (max-width: 360px) {
   .search-box-container {
-    width: 50%;
+    width: 58%;
   }
 }
