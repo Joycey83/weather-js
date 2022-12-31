@@ -242,4 +242,8 @@ footer {
     margin: 1% 1%;
     border-radius: 5px;
   }
+
+  .update {
+    font-size: 12px;
+  }
 }
