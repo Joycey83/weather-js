@@ -208,6 +208,10 @@ div.card-border {
   color: #000080;
   opacity: 0.8;
 }
+
+.daily-weather-description {
+  font-size: 16px;
+}
 /* Footer for accessing my project through social media links */
 footer {
   margin-top: auto;

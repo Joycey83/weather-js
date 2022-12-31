@@ -53,7 +53,9 @@ const displayForecast = function (response) {
         alt=""
         width="100"
       />
-      <h4>${forecastDay.weather[0].description}</h4>
+      <h4 class="daily-weather-description">${
+        forecastDay.weather[0].description
+      }</h4>
       <div class="weather-forecast-temperature">
         <span class="weather-temperature-max">${Math.round(
           forecastDay.temp.max
