@@ -257,8 +257,12 @@ footer {
     margin: 0 auto;
   }
 
-  footer {
-    margin-right: auto;
+  .social-media {
+    margin-left: auto;
+  }
+
+  small {
+    font-size: 16px;
   }
 }
 
