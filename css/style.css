@@ -246,4 +246,8 @@ footer {
   .update {
     font-size: 12px;
   }
+
+  .weather-image strong {
+    font-size: 70px;
+  }
 }
