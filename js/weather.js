@@ -35,6 +35,7 @@ const formatForecastDay = function (dateTimeStamp) {
 const displayForecast = function (response) {
   let dailyForecast = response.data.daily;
   let weatherForecastElement = document.querySelector("#weather-forecast");
+  let dailyWeatherDescription = response.data.weather[0].description;
 
   let forecastHTML = `<div class="row">`;
 
@@ -53,9 +54,7 @@ const displayForecast = function (response) {
         alt=""
         width="100"
       />
-      <h4>${formatForecastDay(
-        forecastDay.response.data.weather[0].description
-      )}</h4>
+      <h4>${dailyWeatherDescription}</h4>
       <div class="weather-forecast-temperature">
         <span class="weather-temperature-max">${Math.round(
           forecastDay.temp.max
