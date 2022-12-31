@@ -34,7 +34,7 @@ const formatForecastDay = function (dateTimeStamp) {
 
 const displayForecast = function (response) {
   let dailyForecast = response.data.daily;
-  console.log(response.data.daily);
+  console.log(response.data);
   let weatherForecastElement = document.querySelector("#weather-forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -76,7 +76,6 @@ const displayForecast = function (response) {
 };
 
 const getForecastInfo = function (coordinates) {
-  console.log(coordinates);
   let apiKey = "8944afa6845bd7c413a687258d3211ef";
   let lat = coordinates.lat;
   let long = coordinates.lon;
@@ -86,7 +85,6 @@ const getForecastInfo = function (coordinates) {
 };
 
 const displayWeatherInfo = function (response) {
-  console.log(response.data);
   celsiusTemperature = response.data.main.temp;
   let tempNum = document.querySelector("#temperature");
   tempNum.innerHTML = Math.round(celsiusTemperature);
