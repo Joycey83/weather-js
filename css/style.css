@@ -255,4 +255,9 @@ footer {
     position: relative;
     top: -30px;
   }
+
+  .celsius-sign,
+  .fahrenheit-sign {
+    font-size: 14px;
+  }
 }
