@@ -34,6 +34,7 @@ const formatForecastDay = function (dateTimeStamp) {
 
 const displayForecast = function (response) {
   let dailyForecast = response.data.daily;
+  console.log(response.data.daily);
   let weatherForecastElement = document.querySelector("#weather-forecast");
 
   let forecastHTML = `<div class="row">`;
