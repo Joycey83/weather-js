@@ -119,6 +119,7 @@ const displayWeatherInfo = function (response) {
   let cityName = document.querySelector("#city-name");
   let weatherDescription = document.querySelector("#weather-description");
   let maxTemperature = document.querySelector("#max-temp");
+  let minTemperature = document.querySelector("#min-temp");
   let humidityNum = document.querySelector("#humidity");
   let windSpeedNum = document.querySelector("#wind-speed");
   let displayDateTime = document.querySelector("#date");
@@ -127,6 +128,7 @@ const displayWeatherInfo = function (response) {
 
   weatherDescription.innerHTML = response.data.weather[0].description;
   maxTemperature.innerHTML = Math.round(response.data.main.temp_max);
+  minTemperature.innerHTML = Math.round(response.data.main.temp_min);
   humidityNum.innerHTML = response.data.main.humidity;
   windSpeedNum.innerHTML = Math.round(response.data.wind.speed);
   displayDateTime.innerHTML = formatDate(response.data.dt * 1000);
