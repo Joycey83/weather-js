@@ -260,4 +260,8 @@ footer {
   .fahrenheit-sign {
     font-size: 14px;
   }
+
+  .card-container {
+    margin: 0 auto;
+  }
 }
