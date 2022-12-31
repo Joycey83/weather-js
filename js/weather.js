@@ -125,7 +125,8 @@ const displayWeatherInfo = function (response) {
   cityName.innerHTML = response.data.name;
 
   weatherDescription.innerHTML = response.data.weather[0].description;
-  maxTemperature.innerHTML = Math.round(response.data.main.temp_max);
+  maxiTemp = Math.round(response.data.main.temp_max);
+  maxTemperature.innerHTML = maxiTemp;
   humidityNum.innerHTML = response.data.main.humidity;
   windSpeedNum.innerHTML = Math.round(response.data.wind.speed);
   displayDateTime.innerHTML = formatDate(response.data.dt * 1000);
