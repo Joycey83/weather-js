@@ -84,6 +84,7 @@ const getForecastInfo = function (coordinates) {
 };
 
 const displayWeatherInfo = function (response) {
+  console.log(response.data);
   celsiusTemperature = response.data.main.temp;
   let tempNum = document.querySelector("#temperature");
   tempNum.innerHTML = Math.round(celsiusTemperature);
