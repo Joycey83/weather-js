@@ -257,10 +257,7 @@ footer {
   }
 
   footer.social-media {
-    background: #000000;
-    padding: 1% 2%;
-    color: aliceblue;
-    text-align: center;
+    margin-left: auto;
   }
 
   small {
