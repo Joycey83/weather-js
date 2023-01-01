@@ -264,7 +264,7 @@ footer {
   }
 
   footer.social-media {
-    margin: 0;
+    padding-bottom: 10px;
   }
 }
 
