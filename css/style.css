@@ -265,6 +265,40 @@ footer {
   }
   .social-media {
     padding: 25px 0;
+  }
+}
+
+@media (max-width: 412px) {
+  .search-box-container {
+    margin: 0;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .weather-image strong {
+    font-size: 55px;
+  }
+
+  div.humid-wind-info {
+    position: relative;
+    top: -30px;
+  }
+
+  .update {
+    font-size: 18px;
+  }
+
+  .celsius-sign,
+  .fahrenheit-sign {
+    font-size: 20px;
+  }
+
+  .card-container {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .social-media {
+    padding: 25px 0;
     margin-top: 10px;
   }
 }
