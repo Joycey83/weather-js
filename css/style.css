@@ -242,7 +242,7 @@ footer {
   }
 
   .weather-image strong {
-    font-size: 35px;
+    font-size: 45px;
   }
 
   div.humid-wind-info {
@@ -252,7 +252,7 @@ footer {
 
   .celsius-sign,
   .fahrenheit-sign {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .card-container {
