@@ -235,9 +235,16 @@ footer {
 /****** Media Queries for the search box */
 
 @media (max-width: 375px) {
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
   .social-media {
-    padding: 0;
-    margin: 0;
+    flex-shrink: 0;
   }
 }
 @media (max-width: 384px) {
