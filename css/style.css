@@ -250,6 +250,10 @@ footer {
     top: -30px;
   }
 
+  .update {
+    font-size: 12px;
+  }
+
   .celsius-sign,
   .fahrenheit-sign {
     font-size: 20px;
