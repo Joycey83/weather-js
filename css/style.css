@@ -239,6 +239,11 @@ footer {
   .fahrenheit-sign {
     font-size: 13px;
   }
+
+  div.humid-wind-info {
+    position: relative;
+    left: -20px;
+  }
 }
 
 @media (max-width: 414px) {
