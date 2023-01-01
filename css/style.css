@@ -235,13 +235,16 @@ footer {
 /****** Media Queries ***/
 
 @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
   .celsius-sign,
   .fahrenheit-sign {
     font-size: 13px;
   }
 
   .weather-image strong {
-    font-size: 40px;
+    font-size: 45px;
   }
 
   div.humid-wind-info {
