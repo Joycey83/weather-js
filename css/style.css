@@ -232,7 +232,24 @@ footer {
 }
 
 /* Media Queries for the Weather App */
-/****** Media Queries for the search box */
+/****** Media Queries ***/
+
+@media (max-width: 390px) {
+  .search-box-container {
+    margin: 0;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .weather-image strong {
+    font-size: 25px;
+  }
+
+  div.humid-wind-info {
+    position: relative;
+    top: -30px;
+  }
+}
 
 @media (max-width: 384px) {
   .search-box-container {
