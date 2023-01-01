@@ -266,6 +266,11 @@ footer {
   .social-media {
     padding: 25px 0;
   }
+
+  .card:hover {
+    background: #b6d0e2;
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 412px) {
