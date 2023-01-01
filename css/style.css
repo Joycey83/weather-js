@@ -234,7 +234,10 @@ footer {
 /* Media Queries for the Weather App */
 /****** Media Queries ***/
 
-@media (max-width: 768px) {
+@media (max-width: 912px) {
+  .social-media {
+    padding: 25px 0;
+  }
 }
 
 @media (max-width: 768px) {
