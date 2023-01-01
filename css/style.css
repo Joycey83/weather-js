@@ -240,6 +240,10 @@ footer {
     font-size: 13px;
   }
 
+  .weather-image strong {
+    font-size: 40px;
+  }
+
   div.humid-wind-info {
     position: relative;
     right: -30px;
