@@ -234,12 +234,6 @@ footer {
 /* Media Queries for the Weather App */
 /****** Media Queries for the search box */
 
-@media (max-width: 375px) {
-  .social-media {
-    margin-top: 20px;
-  }
-}
-
 @media (max-width: 384px) {
   .search-box-container {
     margin: 0;
@@ -266,6 +260,12 @@ footer {
 
   small {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .social-media {
+    margin-top: 20px;
   }
 }
 
