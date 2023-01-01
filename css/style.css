@@ -234,6 +234,13 @@ footer {
 /* Media Queries for the Weather App */
 /****** Media Queries ***/
 
+@media (max-width: 768px) {
+  .celsius-sign,
+  .fahrenheit-sign {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 414px) {
   .search-box-container {
     margin: 0;
