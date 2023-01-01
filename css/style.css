@@ -429,15 +429,9 @@ footer {
   }
 }
 
-/* @media (max-width: 375px) {
-  .social-media {
-    margin-top: 20px;
-  }
-} */
-
 @media (max-width: 360px) {
   h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
   .search-box-container {
     width: 350px;
