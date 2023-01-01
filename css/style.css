@@ -263,8 +263,8 @@ footer {
     font-size: 16px;
   }
 
-  .social-media {
-    margin-top: -40px;
+  footer.social-media {
+    margin-top: 20px;
   }
 }
 
