@@ -431,7 +431,7 @@ footer {
 
 @media (max-width: 360px) {
   h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
   .search-box-container {
     width: 350px;
@@ -445,7 +445,7 @@ footer {
   }
 
   .weather-image strong {
-    font-size: 70px;
+    font-size: 55px;
   }
 
   div.humid-wind-info {
