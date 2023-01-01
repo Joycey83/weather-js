@@ -251,7 +251,7 @@ footer {
   }
 
   .update {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .celsius-sign,
@@ -268,7 +268,7 @@ footer {
   }
 
   footer.social-media {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
 }
 
