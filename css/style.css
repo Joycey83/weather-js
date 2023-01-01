@@ -234,7 +234,7 @@ footer {
 /* Media Queries for the Weather App */
 /****** Media Queries ***/
 
-@media (max-width: 412px) {
+@media (max-width: 414px) {
   .search-box-container {
     margin: 0;
     padding: 5px;
