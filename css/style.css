@@ -234,6 +234,36 @@ footer {
 /* Media Queries for the Weather App */
 /****** Media Queries ***/
 
+@media (max-width: 393px) {
+  .search-box-container {
+    margin: 0;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .weather-image strong {
+    font-size: 55px;
+  }
+
+  div.humid-wind-info {
+    position: relative;
+    top: -30px;
+  }
+
+  .update {
+    font-size: 16px;
+  }
+
+  .celsius-sign,
+  .fahrenheit-sign {
+    font-size: 20px;
+  }
+
+  .card-container {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 390px) {
   .search-box-container {
     margin: 0;
