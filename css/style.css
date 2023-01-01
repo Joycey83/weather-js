@@ -262,6 +262,9 @@ footer {
   .card-container {
     margin: 0 auto;
   }
+  .social-media {
+    padding: 20px 0;
+  }
 }
 
 @media (max-width: 390px) {
