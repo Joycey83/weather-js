@@ -260,7 +260,7 @@ footer {
   }
 
   small {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   footer.social-media {
@@ -294,6 +294,14 @@ footer {
 
   small {
     font-size: 16px;
+  }
+
+  .social-media {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
   }
 }
 
