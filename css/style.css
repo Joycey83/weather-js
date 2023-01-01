@@ -265,6 +265,7 @@ footer {
   .social-media {
     padding: 25px 0;
     margin-top: 10px;
+    overflow-x: hidden;
   }
 }
 
