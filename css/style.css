@@ -266,6 +266,10 @@ footer {
   small {
     font-size: 16px;
   }
+
+  .social-media {
+    padding-bottom: 10px;
+  }
 }
 
 @media (max-width: 384px) {
