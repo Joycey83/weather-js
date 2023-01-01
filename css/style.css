@@ -266,11 +266,6 @@ footer {
   small {
     font-size: 16px;
   }
-
-  .social-media {
-    margin: 0;
-    padding: 0;
-  }
 }
 
 @media (max-width: 384px) {
