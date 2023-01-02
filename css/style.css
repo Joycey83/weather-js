@@ -64,6 +64,15 @@ li:first-letter {
   font-size: 22px;
   top: -10px;
 }
+
+.weather-image .active {
+  color: #0047ab;
+  cursor: default;
+}
+
+.weather-image .active:hover {
+  text-decoration: none;
+}
 /* Humidity info */
 div.humid-wind-info {
   position: relative;
@@ -155,26 +164,7 @@ div.humid-wind-info {
   background-position: center center;
   overflow-x: hidden;
 }
-/* Styles for the temperature font */
 
-.units .active {
-  color: #0047ab;
-  text-decoration: none;
-  cursor: default;
-}
-
-.units .active:hover {
-  text-decoration: none;
-}
-
-.units a {
-  text-decoration: none;
-}
-
-.celsius-sign,
-.fahrenheit-sign {
-  color: #000;
-}
 /* Weather forecast styles */
 
 .card {
