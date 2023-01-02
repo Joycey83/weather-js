@@ -228,34 +228,34 @@ form.addEventListener("submit", searchCity);
 
 // Convert celsius to fahrenheit function
 
-const displayFahrenheitTemp = function (event) {
-  event.preventDefault();
-  let tempNum = document.querySelector("#temperature");
-  // remove the active class for the celsius link
-  celsiusLink.classList.remove("active");
-  // add the active class for the  fahrenheit Link
-  fahrenheitLink.classList.add("active");
-  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
-  tempNum.innerHTML = Math.round(fahrenheitTemp);
-};
+// const displayFahrenheitTemp = function (event) {
+//   event.preventDefault();
+//   let tempNum = document.querySelector("#temperature");
+//   // remove the active class for the celsius link
+//   celsiusLink.classList.remove("active");
+//   // add the active class for the  fahrenheit Link
+//   fahrenheitLink.classList.add("active");
+//   let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
+//   tempNum.innerHTML = Math.round(fahrenheitTemp);
+// };
 
-const displayCelsiusTemp = function (event) {
-  event.preventDefault();
-  let tempNum = document.querySelector("#temperature");
-  // add the active class for the celsius link
-  celsiusLink.classList.add("active");
-  // remove the active class for the  fahrenheit Link
-  fahrenheitLink.classList.remove("active");
-  tempNum.innerHTML = Math.round(celsiusTemperature);
-};
+// const displayCelsiusTemp = function (event) {
+//   event.preventDefault();
+//   let tempNum = document.querySelector("#temperature");
+//   // add the active class for the celsius link
+//   celsiusLink.classList.add("active");
+//   // remove the active class for the  fahrenheit Link
+//   fahrenheitLink.classList.remove("active");
+//   tempNum.innerHTML = Math.round(celsiusTemperature);
+// };
 
 // Global event
 let celsiusTemperature = null;
 
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
+// let fahrenheitLink = document.querySelector("#fahrenheit-link");
+// fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemp);
+// let celsiusLink = document.querySelector("#celsius-link");
+// celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 search("London");
