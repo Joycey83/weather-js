@@ -60,19 +60,12 @@ li:first-letter {
 }
 
 .weather-image .units {
+  color: #000080;
   position: relative;
   font-size: 22px;
   top: -10px;
 }
 
-.weather-image .active {
-  color: #0047ab;
-  cursor: default;
-}
-
-.weather-image .active:hover {
-  text-decoration: none;
-}
 /* Humidity info */
 div.humid-wind-info {
   position: relative;
