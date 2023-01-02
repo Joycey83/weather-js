@@ -222,35 +222,35 @@ const currentLocation = function (event) {
 const locationBtn = document.querySelector("#location-button");
 locationBtn.addEventListener("click", currentLocation);
 
-// Global event
-let celsiusTemperature = null;
-
 // Search engine eventlistner
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCity);
 
-// Convert convert celsius to fahrenheit function
+// Convert celsius to fahrenheit function
 
 const displayFahrenheitTemp = function (event) {
   event.preventDefault();
+  let tempNum = document.querySelector("#temperature");
   // remove the active class for the celsius link
   celsiusLink.classList.remove("active");
   // add the active class for the  fahrenheit Link
   fahrenheitLink.classList.add("active");
-  let tempNum = document.querySelector("#temperature");
   let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
   tempNum.innerHTML = Math.round(fahrenheitTemp);
 };
 
 const displayCelsiusTemp = function (event) {
   event.preventDefault();
+  let tempNum = document.querySelector("#temperature");
   // add the active class for the celsius link
   celsiusLink.classList.add("active");
   // remove the active class for the  fahrenheit Link
   fahrenheitLink.classList.remove("active");
-  let tempNum = document.querySelector("#temperature");
   tempNum.innerHTML = Math.round(celsiusTemperature);
 };
+
+// Global event
+let celsiusTemperature = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
