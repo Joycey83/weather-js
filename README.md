@@ -20,3 +20,11 @@ My approach for designing this weather application was to create it so that it i
 - Background images changes depending on the weather temperature for example if they city/country the user selected is < 0 a snowing background image will be shown. If the temperature is > 19 a sunny background image will be shown etc.
 
 ![netlify button.](/images/deploy-button.png)
+
+## Usage
+
+- Visit https://weatherjs88.netlify.app/
+- Type a city/country of your choice in the search bar
+- Press the "Enter" button to search for the city or click on the search Icon.
+- View the six day forecast for that city/country
+- Hover over each day to get a better view of the max/min temperatures
