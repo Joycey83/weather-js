@@ -32,7 +32,7 @@ My approach for designing this weather application was to create it so that it i
 - Google Fonts One: [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono?query=roboto+mono)
 - Google Fonts Two: [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins)
 - Animated weather Icons: [Meteocons](https://bas.dev/work/meteocons)
-- [Openweathermap.org api](https://openweathermap.org/api)
+- Weather API used: [Openweathermap.org api](https://openweathermap.org/api)
 
 # Credit
 
