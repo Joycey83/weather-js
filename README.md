@@ -8,7 +8,7 @@ A simple weather application that displays the current weather and daily forecas
 
 My approach for designing this weather application was to create it so that it is not only accessible to view on desktop but it is also mobile responsive. The applicaion is also accessible through a range of different devices.
 
-![page mock up.](/images/weather-mockup.png)
+![page mock up.](images/weather-mockup.png)
 
 
 
