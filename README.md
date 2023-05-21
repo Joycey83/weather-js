@@ -27,6 +27,13 @@ My approach for designing this weather application was to create it so that it i
 - View the six day forecast for that city/country
 - Hover over each day to get a better view of the max/min temperatures
 
+# Frameworks & Programs Used
+
+- Google Fonts One: [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono?query=roboto+mono)
+- Google Fonts Two: [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins)
+- Animated weather Icons: [Meteocons](https://bas.dev/work/meteocons)
+- [Openweathermap.org api](https://openweathermap.org/api)
+
 # Credit
 
 - Animated weather Icons was taken from [Meteocons](https://bas.dev/work/meteocons) designed by [Basmilius](https://bas.dev/)
