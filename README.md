@@ -34,6 +34,20 @@ My approach for designing this weather application was to create it so that it i
 - Animated weather Icons: [Meteocons](https://bas.dev/work/meteocons)
 - Weather API used: [Openweathermap.org](https://openweathermap.org/api)
 
+# Running Locally
+
+## Live server
+
+1.You will need node.js and npm. You should probably install this globally.
+
+2.run the following command in your terminal:
+
+npm install -g live-server
+
+3.In your project directory issue the command live-server
+
+4.This will automatically launch the default browser. When you make a change to any file, the browser will reload the page - unless it was a CSS file in which case the changes are applied without a reload.
+
 # Credit
 
 - Animated weather Icons was taken from [Meteocons](https://bas.dev/work/meteocons) designed by [Basmilius](https://bas.dev/)
