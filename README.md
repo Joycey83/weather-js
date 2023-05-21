@@ -48,8 +48,38 @@ npm install -g live-server
 
 4.This will automatically launch the default browser. When you make a change to any file, the browser will reload the page - unless it was a CSS file in which case the changes are applied without a reload.
 
+# Deployment
+
+## Deploy a project to Netlify
+
+This site was deployed to Netlify. Plese follow these steps to deploy your site:
+
+One way to get started deploying on Netlify is to use a Deploy to Netlify button to add a site.
+
+1.Select the Deploy to Netlify button.
+
+![netlify button.](/images/deploy-button.png)
+
+You will get directed to the Netlify app to create a new site. You should find the following page, asking you to connect to GitHub.
+
+2.Select Connect to GitHub to authenticate. If you don’t already have a Netlify user account, you will get one as part of this process.
+
+3.Select Save & Deploy. As well as creating a new site on Netlify, this process clones the demo project repository to your GitHub account so you can make your own changes later on.
+
+You will be redirected to the Site overview page where you can check for the deploy in the Production deploys list.
+
+![netlify deployment.](/images/github-2.png)
+
+You can also check that the repository has been cloned properly by selecting GitHub to navigate to your new repository on GitHub.
+
+![netlify deployment2.](/images/github-1.png)
+
+4.Once the deploy has finished building, you should get a production URL where you can access the website.
+
+![netlify production url.](/images/github-3.png)
+
+5.You can choose to customize the URL by changing the site’s name in the Netlify UI at Site settings > Site details > Site information.
+
 # Credit
 
 - Animated weather Icons was taken from [Meteocons](https://bas.dev/work/meteocons) designed by [Basmilius](https://bas.dev/)
-
-  ![netlify button.](/images/deploy-button.png)
